@@ -144,6 +144,12 @@ Before you can kill something, you need its "ID Number" (PID).
 3.  **Execute:** `kill 1234` (Try polite first!)
 4.  **Confirm:** If it’s still there, `kill -9 1234`.
 
+## 5. Pro Tip: `pkill` and `killall`
+If you don't want to look up the PID number, you can use the name directly:
+
+* `pkill discord`: Kills the process named "discord".
+* `killall chrome`: Kills **every** window and process related to Chrome.
+
 ---
 
 ## 🛠️ Linux Services: Daemons and Systemctl
@@ -222,8 +228,6 @@ If a service fails to start, run:
 | **Lifespan** | Closes when you quit | Runs until system shutdown |
 | **Control** | Click icons/buttons | Managed via `systemctl` |
 | **Parent** | Your Desktop Environment | `systemd` (PID 1) |
-## 5. Pro Tip: `pkill` and `killall`
-If you don't want to look up the PID number, you can use the name directly:
 
-* `pkill discord`: Kills the process named "discord".
-* `killall chrome`: Kills **every** window and process related to Chrome.
+
+
